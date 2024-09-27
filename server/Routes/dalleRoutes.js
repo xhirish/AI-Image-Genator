@@ -10,7 +10,7 @@ dotenv.config();
 const router = express.Router();
 
 const configuration = new Configuration({
-    apiKey: process.env.OPEN_AI_KEY,  // Replace with your actual API key
+    apiKey: process.env.OPEN_AI_KEY,
   });
 
 router.route('/').get((req, res) => {
